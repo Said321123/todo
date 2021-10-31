@@ -6,13 +6,6 @@ let tasksArray = localStorage.getItem("tasks")
   ? JSON.parse(localStorage.getItem("tasks"))
   : [];
 
-/*JSON.parse(localStorage.getItem("tasks"))
-  ? JSON.parse(localStorage.getItem("tasks"))
-  : [];*/
-
-console.log(localStorage.setItem("tasks", JSON.stringify(tasksArray)));
-console.log(JSON.parse(localStorage.getItem("tasks")));
-
 function said() {
   tasks.innerHTML = "";
   tasksArray.forEach((element, i) => {
@@ -28,6 +21,7 @@ function said() {
         </div>
       </div>`;
   });
+  localStorage.setItem("tasks", JSON.stringify(tasksArray));
 }
 said();
 
