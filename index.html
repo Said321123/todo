@@ -4,13 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="https://yandex.ru/images/search?pos=0&from=tabbar&img_url=https%3A%2F%2Fclipart-best.com%2Fimg%2Fbook%2Fbook-clip-art-127.png&text=книга&rpt=simage"
-    />
-    <title>Document</title>
+    <link rel="shortcut icon" href="/todo/favicon.ico" />
+    <link rel="stylesheet" href="/todo/todo_style.css" />
+    <title>Todo</title>
   </head>
   <body>
-    <script src="todo_js.js"></script>
+    <div class="wrapper">
+      <h1>Что сегодня бро?</h1>
+      <input class="input" id="input" />
+      <button class="add" id="addBtn">Add new task</button>
+      <div class="divider"></div>
+      <h2>Ваши задачи:</h2>
+      <div class="tasks" id="tasks">
+        <!--<div class="task">
+          Купить
+          <div class="bnts">
+            <input type="checkbox" />
+            <img
+              class="delete-btn"
+              src="https://img.icons8.com/ios-glyphs/30/000000/delete-sign.png"
+            />
+          </div>
+        </div>
+
+        <div class="task completed">
+          Купить
+          <div class="bnts">
+            <input type="checkbox" checked />
+            <img
+              class="delete-btn"
+              src="https://img.icons8.com/ios-glyphs/30/000000/delete-sign.png"
+            />
+          </div>
+        </div>-->
+      </div>
+    </div>
+    <script src="/todo/todo_js.js"></script>
   </body>
 </html>
